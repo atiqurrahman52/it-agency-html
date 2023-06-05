@@ -29,7 +29,7 @@
 
 /* background image start */
  .banner__background{
-    background-image: url("/assets/images/banner/banner.webp");
+    background-image: url("../assets/images/banner/banner.webp");
  }
  .it__support{
   background-image: url("/assets/images/it-support/it-support.webp");
