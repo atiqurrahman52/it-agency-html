@@ -11,27 +11,40 @@
     font-style: normal;
   } */
 @font-face {
-    font-family: "Open_Sans_Condensed";
-    src: url("./assets/font/open-sans-condensed/OpenSans-CondBold.ttf") format("woff2"),
-      url("./assets/font/open-sans-condensed/OpenSans-CondLight.ttf") format("woff"),
-      url("./assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Open_Sans_Condensed";
+  src: url("./assets/font/open-sans-condensed/OpenSans-CondBold.ttf")
+      format("woff2"),
+    url("./assets/font/open-sans-condensed/OpenSans-CondLight.ttf")
+      format("woff"),
+    url("./assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .backdrop {
   /* background: rgba(251, 251, 251, 0.03); */
   backdrop-filter: blur(10.5px);
 }
-.nav__background{
-    background: rgba(251, 251, 251, 0.03)
+.nav__background {
+  background: rgba(251, 251, 251, 0.03);
 }
 
 /* background image start */
- .banner__background{
-    background-image: url("../assets/images/banner/banner.webp");
- }
- .it__support{
+.banner__background {
+  background-image: url("../assets/images/banner/banner.webp");
+}
+.it__support {
   background-image: url("../assets/images/it-support/it-support.webp");
- }
+}
 /* background image end */
+
+/* swiper slider start  */
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-primary w-4 h-2 rounded-lg;
+}
+
+.recent_work_pagination {
+  /* bottom: -1px !important; */
+}
+/* swiper slider end */

@@ -600,8 +600,17 @@ video {
   z-index: 40;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-16{
@@ -618,6 +627,10 @@ video {
 
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .mb-8{
@@ -664,12 +677,20 @@ video {
   display: none;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
 .h-\[162px\]{
   height: 162px;
 }
 
 .h-screen{
   height: 100vh;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .w-\[241px\]{
@@ -947,6 +968,15 @@ video {
   line-height: 2rem;
 }
 
+.leading-\[34px\]{
+  line-height: 34px;
+}
+
+.text-\[\#06182D\]{
+  --tw-text-opacity: 1;
+  color: rgb(6 24 45 / var(--tw-text-opacity));
+}
+
 .text-\[\#08192B\]{
   --tw-text-opacity: 1;
   color: rgb(8 25 43 / var(--tw-text-opacity));
@@ -964,6 +994,10 @@ video {
 
 .text-black\/60{
   color: rgb(0 0 0 / 0.6);
+}
+
+.text-black\/80{
+  color: rgb(0 0 0 / 0.8);
 }
 
 .text-black_color{
@@ -1016,9 +1050,12 @@ video {
 @font-face {
   font-family: "Open_Sans_Condensed";
 
-  src: url("./assets/font/open-sans-condensed/OpenSans-CondBold.ttf") format("woff2"),
-      url("./assets/font/open-sans-condensed/OpenSans-CondLight.ttf") format("woff"),
-      url("./assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf") format("woff");
+  src: url("./assets/font/open-sans-condensed/OpenSans-CondBold.ttf")
+      format("woff2"),
+    url("./assets/font/open-sans-condensed/OpenSans-CondLight.ttf")
+      format("woff"),
+    url("./assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf")
+      format("woff");
 
   font-weight: normal;
 
@@ -1031,21 +1068,37 @@ video {
           backdrop-filter: blur(10.5px);
 }
 
-.nav__background{
-  background: rgba(251, 251, 251, 0.03)
+.nav__background {
+  background: rgba(251, 251, 251, 0.03);
 }
 
 /* background image start */
 
-.banner__background{
+.banner__background {
   background-image: url("../assets/images/banner/banner.webp");
 }
 
-.it__support{
+.it__support {
   background-image: url("../assets/images/it-support/it-support.webp");
 }
 
 /* background image end */
+
+/* swiper slider start  */
+
+.swiper-pagination-bullets .swiper-pagination-bullet{
+  height: 0.5rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 85 100 / var(--tw-bg-opacity));
+}
+
+.recent_work_pagination {
+  /* bottom: -1px !important; */
+}
+
+/* swiper slider end */
 
 @media (min-width: 768px){
   .md\:mb-6{
