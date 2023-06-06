@@ -39,7 +39,7 @@ module.exports = {
       },
 
       colors: {
-        text_color: "#071C1F",
+        yellow: "#EEA900",
         primary: "#005564",
         black_color: "#1A170F",
         secondary_color: "#FF5E37",
