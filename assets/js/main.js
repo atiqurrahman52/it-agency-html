@@ -64,7 +64,7 @@ var swiper_testimonial = new Swiper(".testimonial", {
     centeredSlides: true,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 1000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -87,6 +87,40 @@ var swiper_testimonial = new Swiper(".testimonial", {
       320: {
         slidesPerView: 1,
         spaceBetween: 20,
+      },
+    },
+  });
+var swiper_client = new Swiper(".client", {
+
+    spaceBetween: 20,
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopAdditionalSlides: 2,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".testimonial_pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 10,
+        spaceBetween: 24,
+      },
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 10,
       },
     },
   });
