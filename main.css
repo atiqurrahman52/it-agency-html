@@ -37,6 +37,12 @@
 .it__support {
   background-image: url("../assets/images/it-support/it-support.webp");
 }
+.subscribe{
+  background-image: url("../assets/images/subscribe/subscribe.webp")
+}
+.footer{
+  background-image: url("../assets/images/footer/footer.png")
+}
 /* background image end */
 
 /* swiper slider start  */
