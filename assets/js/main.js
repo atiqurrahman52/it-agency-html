@@ -58,38 +58,72 @@ var swiper_recent_work = new Swiper(".recent_work", {
     },
   });
 
-var swiper_testimonial = new Swiper(".testimonial", {
-    spaceBetween: 20,
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
+// var swiper_testimonial = new Swiper(".testimonial", {
+//     spaceBetween: 20,
+//     slidesPerView: 1,
+//     centeredSlides: true,
+//     loop: true,
+//     autoplay: {
+//       delay: 2000,
+//       disableOnInteraction: false,
+//     },
+//     pagination: {
+//       el: ".testimonial_pagination",
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       1024: {
+//         slidesPerView: 3,
+//         spaceBetween: 24,
+//       },
+//       768: {
+//         slidesPerView: 3,
+//         spaceBetween: 20,
+//       },
+//       640: {
+//         slidesPerView: 2,
+//         spaceBetween: 20,
+//       },
+//       320: {
+//         slidesPerView: 1,
+//         spaceBetween: 20,
+//       },
+//     },
+//   });
+
+var swiper_recent_work = new Swiper(".testimonial", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: ".testimonial_pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
     },
-    pagination: {
-      el: ".testimonial_pagination",
-      clickable: true,
+   
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-  });
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+
 var swiper_client = new Swiper(".client", {
 
     spaceBetween: 20,

@@ -12,11 +12,11 @@
   } */
 @font-face {
   font-family: "Open_Sans_Condensed";
-  src: url("./assets/font/open-sans-condensed/OpenSans-CondBold.ttf")
+  src: url("../assets/font/open-sans-condensed/OpenSans-CondBold.ttf")
       format("woff2"),
-    url("./assets/font/open-sans-condensed/OpenSans-CondLight.ttf")
+    url("../assets/font/open-sans-condensed/OpenSans-CondLight.ttf")
       format("woff"),
-    url("./assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf")
+    url("../assets/font/open-sans-condensed/OpenSans-CondLightItalic.ttf")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -42,6 +42,9 @@
 }
 .footer{
   background-image: url("../assets/images/footer/footer.png")
+}
+.about{
+  background-image: url("../assets/images/about/about.webp")
 }
 /* background image end */
 
