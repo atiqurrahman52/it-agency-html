@@ -46,6 +46,12 @@
 .about{
   background-image: url("../assets/images/about/about.webp")
 }
+.service_detail_header{
+  background-image: url("/assets/images/service-detail/service-detail-header.webp")
+}
+.blog_header{
+  background-image: url("")
+}
 /* background image end */
 
 /* swiper slider start  */
