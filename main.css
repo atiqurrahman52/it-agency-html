@@ -47,10 +47,10 @@
   background-image: url("../assets/images/about/about.webp")
 }
 .service_detail_header{
-  background-image: url("/assets/images/service-detail/service-detail-header.webp")
+  background-image: url("../assets/images/service-detail/service-detail-header.webp")
 }
 .blog_header{
-  background-image: url("")
+  background-image: url("../assets/images/blog/blog-header.webp")
 }
 /* background image end */
 
@@ -82,3 +82,28 @@
   @apply font-Inter font-medium text-sm md:text-xl bg-[#F5FAFF] py-2 md:py-[10px] px-3  text-primary border border-primary rounded-lg
 }
 /* recent work end */
+
+
+
+.filter-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: gray;
+  color: white;
+}
+
+.items {
+  margin-top: 10px;
+}
+
+.item {
+  display: none;
+  padding: 10px;
+  /* border: 1px solid gray; */
+}

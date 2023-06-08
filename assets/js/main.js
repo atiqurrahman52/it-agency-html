@@ -165,9 +165,6 @@ var swiper_client = new Swiper(".client", {
 
 
 $(document).ready(function() {
-    
-  //alert('here');
-
 $('.tabs a').click(function(){
 
    $('.panel').hide();
@@ -182,5 +179,67 @@ $('.tabs a').click(function(){
 });  // end click 
 
    $('.tabs li:first a').click();
+
+  // latest post start 
+  $('.filter-button').on('click', function() {
+    var filter = $(this).data('filter');
+
+    $('.filter-button').removeClass('active');
+    $(this).addClass('active');
+
+    if (filter === 'all') {
+      $('.item').show();
+    } else {
+      $('.item').hide();
+      $('.item.' + filter).show();
+    }
+  });
+
+  // Initially show all categories
+  $('.item').show();
+
+    // latest post end
+
    
-}); // end ready
+}); 
+
+
+
+// $(document).ready(function() {
+//   $('.filter-button').on('click', function() {
+//     var filter = $(this).data('filter');
+
+//     $('.filter-button').removeClass('active');
+//     $(this).addClass('active');
+
+//     if (filter === 'all') {
+//       $('.item').show();
+//     } else {
+//       $('.item').hide();
+//       $('.item.' + filter).show();
+//     }
+//   });
+// });
+
+$(document).ready(function() {
+  // $('.filter-button').on('click', function() {
+  //   var filter = $(this).data('filter');
+
+  //   $('.filter-button').removeClass('active');
+  //   $(this).addClass('active');
+
+  //   if (filter === 'all') {
+  //     $('.item').show();
+  //   } else {
+  //     $('.item').hide();
+  //     $('.item.' + filter).show();
+  //   }
+  // });
+
+  // // Initially show all categories
+  // $('.item').show();
+});
+
+
+
+
