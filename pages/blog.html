@@ -149,7 +149,7 @@
 
     <!-- blog header start  -->
     <section id="blog-header">
-        <div class="blog_header bg-center bg-cove bg-no-repeat mt-20">
+        <div class="blog_header bg-center w-full bg-cove bg-no-repeat mt-20">
             <div class="container">
                 <div class="py-16 md:py-10">
                     <h3 class="font-Inter font-medium text-sm md:text-base text-white text-center mb-2">Blog</h3>
@@ -197,10 +197,7 @@
                             </svg>
                             <div>
                                 <h4 class="font-Inter font-bold text-sm mb-1">Full name</h4>
-                                <p
-                                    class="font-Inter font-medium text-xs md:text-sm text-black/40 flex items-center gap-2">
-                                    11 Jan 2022 <span class="bg-[#000000] w-1 h-1 block rounded-full"></span> 5 min read
-                                </p>
+                                
                             </div>
 
                         </div>
@@ -259,16 +256,20 @@
 
                 <div class="flex flex-col md:flex-row md:justify-between gap-4 mb-5 md:mb-8">
                     <h4 class="font-NotoSerif font-extrabold text-xl text-black_color">Latest Posts</h4>
-                    
-                <div class="tab-filter">
-                    <button class="filter-button active" data-filter="all">All</button>
-                    <button class="filter-button" data-filter="popular">Popular</button>
-                    <button class="filter-button" data-filter="recent">Recent </button>
-                </div>
+
+                    <div class="tab-filter flex gap-4">
+                        <button
+                            class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4 active"
+                            data-filter="all">All</button>
+                        <button class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
+                            data-filter="popular">Popular</button>
+                        <button class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
+                            data-filter="recent">Recent </button>
+                    </div>
                 </div>
 
                 <div class="items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
-                    <a href="#" class="item popular">
+                    <a href="./blog-details.html" class="item popular">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-1.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -294,7 +295,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item recent">
+                    <a href="./blog-details.html" class="item recent">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-2.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -320,7 +321,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item popular">
+                    <a href="./blog-details.html" class="item popular">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-3.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -346,7 +347,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item recent">
+                    <a href="./blog-details.html" class="item recent">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-4.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -372,7 +373,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item popular">
+                    <a href="./blog-details.html" class="item popular">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-5.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -398,7 +399,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item recent">
+                    <a href="./blog-details.html" class="item recent">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-6.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -424,7 +425,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item popular">
+                    <a href="./blog-details.html" class="item popular">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-7.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -450,7 +451,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item recent">
+                    <a href="./blog-details.html" class="item recent">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-8.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -476,7 +477,7 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-                    <a href="#" class="item popular">
+                    <a href="./blog-details.html" class="item popular">
                         <div class="bg-[#F9F9F9] p-3 md:p-5 rounded-md">
                             <img class="rounded-lg w-full" src="../assets/images/blog/post-9.webp" alt="">
                             <div class="flex items-center gap-3 mt-3 mb-5">
@@ -502,7 +503,6 @@
                                 dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                         </div>
                     </a>
-
 
                 </div>
 

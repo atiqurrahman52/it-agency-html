@@ -37,20 +37,26 @@
 .it__support {
   background-image: url("../assets/images/it-support/it-support.webp");
 }
-.subscribe{
-  background-image: url("../assets/images/subscribe/subscribe.webp")
+.subscribe {
+  background-image: url("../assets/images/subscribe/subscribe.webp");
 }
-.footer{
-  background-image: url("../assets/images/footer/footer.png")
+.footer {
+  background-image: url("../assets/images/footer/footer.png");
 }
-.about{
-  background-image: url("../assets/images/about/about.webp")
+.about {
+  background-image: url("../assets/images/about/about.webp");
 }
-.service_detail_header{
-  background-image: url("../assets/images/service-detail/service-detail-header.webp")
+.service_detail_header {
+  background-image: url("../assets/images/service-detail/service-detail-header.webp");
 }
-.blog_header{
-  background-image: url("../assets/images/blog/blog-header.webp")
+.blog_header {
+  background-image: url("../assets/images/blog/blog-header.webp");
+}
+.blog_hero_bg {
+  background-image: url("../assets/images/blog-detail/blog-bg.webp");
+}
+.not_found {
+  background-image: url("../assets/images/not-found/404-error-bg.webp");
 }
 /* background image end */
 
@@ -64,46 +70,14 @@
 }
 /* swiper slider end */
 
-
 /* recent work start  */
-/* .tabs a.active {
-	border-bottom: 2px solid white;
-	background-color: #fff;
-	color: #000;
-        font-weight: bold;
-} */
 .tabs a.active {
-	/* border-bottom: 2px solid white; */
-	/* background-color: ; */
-  /* padding: 10px 12px; */
-	/* color: #005564; */
-  /* border:1px solid #005564; */
-  /* border-radius: 8px; */
-  @apply font-Inter font-medium text-sm md:text-xl bg-[#F5FAFF] py-2 md:py-[10px] px-3  text-primary border border-primary rounded-lg
+  @apply font-Inter font-medium text-sm md:text-xl bg-[#F5FAFF] py-2 md:py-[10px] px-3  text-primary border border-primary rounded-lg;
 }
 /* recent work end */
 
-
-
-.filter-button {
-  padding: 5px 10px;
-  margin-right: 5px;
-  background-color: lightgray;
-  border: none;
-  cursor: pointer;
-}
-
+/* Latest Posts start  */
 .filter-button.active {
-  background-color: gray;
-  color: white;
+  @apply bg-secondary_color text-white;
 }
-
-.items {
-  margin-top: 10px;
-}
-
-.item {
-  display: none;
-  padding: 10px;
-  /* border: 1px solid gray; */
-}
+/* Latest Posts end  */
