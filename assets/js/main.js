@@ -57,44 +57,12 @@ var swiper_recent_work = new Swiper(".recent_work", {
   },
 });
 
-// var swiper_testimonial = new Swiper(".testimonial", {
-//     spaceBetween: 20,
-//     slidesPerView: 1,
-//     centeredSlides: true,
-//     loop: true,
-//     autoplay: {
-//       delay: 2000,
-//       disableOnInteraction: false,
-//     },
-//     pagination: {
-//       el: ".testimonial_pagination",
-//       clickable: true,
-//     },
-//     breakpoints: {
-//       1024: {
-//         slidesPerView: 3,
-//         spaceBetween: 24,
-//       },
-//       768: {
-//         slidesPerView: 3,
-//         spaceBetween: 20,
-//       },
-//       640: {
-//         slidesPerView: 2,
-//         spaceBetween: 20,
-//       },
-//       320: {
-//         slidesPerView: 1,
-//         spaceBetween: 20,
-//       },
-//     },
-//   });
-
 var swiper_recent_work = new Swiper(".testimonial", {
   spaceBetween: 20,
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
+  loopFillGroupWithBlank: true,
   autoplay: {
     delay: 2000,
   },
@@ -154,17 +122,15 @@ var swiper_related_post = new Swiper(".related_post", {
 
 var swiper_client = new Swiper(".client", {
   spaceBetween: 20,
-  slidesPerView: 1,
-  centeredSlides: true,
+  // slidesPerView: 1,
+  // centeredSlides: true,
   loop: true,
-  loopAdditionalSlides: 2,
+  loopFillGroupWithBlank: true,
+  // loopAdditionalSlides: 2,
+  speed: 1000,
   autoplay: {
-    delay: 1000,
+    delay: -1000,
     disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".testimonial_pagination",
-    clickable: true,
   },
   breakpoints: {
     1024: {
@@ -224,20 +190,20 @@ $(document).ready(function () {
   // latest post end
 });
 
-
-
-
-
-
-
-$(document).ready(function() {
-  $('nav li').click(function() {
-    $(this).toggleClass('active').siblings().removeClass('active');
-    $(this).siblings().find('ul').slideUp();
-    $(this).find('ul').slideToggle(function() {
-      $(this).find('li').each(function(index) {
-        $(this).delay(index * 100).animate({ opacity: '1' }, 200);
+$(document).ready(function () {
+  $("nav li").click(function () {
+    $(this).toggleClass("active").siblings().removeClass("active");
+    $(this).siblings().find("ul").slideUp();
+    $(this)
+      .find("ul")
+      .slideToggle(function () {
+        $(this)
+          .find("li")
+          .each(function (index) {
+            $(this)
+              .delay(index * 100)
+              .animate({ opacity: "1" }, 200);
+          });
       });
-    });
   });
 });

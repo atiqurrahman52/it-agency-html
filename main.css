@@ -3,13 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-    font-family: "Open_Sans_Condensed";
-    src: url("../assets/fonts/itcedscr-webfont.woff2") format("woff2"),
-      url("../assets/fonts/itcedscr-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  } */
 @font-face {
   font-family: "Open_Sans_Condensed";
   src: url("../assets/font/open-sans-condensed/OpenSans-CondBold.ttf")
@@ -62,9 +55,11 @@
 
 /* swiper slider start  */
 .swiper-pagination-bullets .swiper-pagination-bullet {
-  @apply bg-primary w-4 h-2 rounded-lg;
+  @apply bg-primary w-3 h-3 transition-all duration-300 ease-in;
 }
-
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  @apply h-3 w-8 rounded-lg;
+}
 .recent_work_pagination {
   /* bottom: -1px !important; */
 }
@@ -81,8 +76,6 @@
   @apply bg-secondary_color text-white;
 }
 /* Latest Posts end  */
-
-
 
 .add-to-cart-btn1::before {
   content: "";
@@ -125,3 +118,50 @@
   bottom: -30%;
 }
 
+.span1::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  position: absolute;
+  bottom: -14px;
+  left: -14px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.div1:hover .span1 {
+  color: white;
+}
+.div1:hover .span1::before {
+  height: 400px;
+  width: 400px;
+  left: -40%;
+  bottom: -30%;
+}
+
+.client .swiper-wrapper {
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+}
+
+.testimonial .swiper-slide {
+  padding-top: 40px;
+}
+
+#testimonial .swiper-slide-active .testimonial-avatar {
+  @apply h-20 w-20 -mt-10 mb-4 border-primary;
+}
+#testimonial .swiper-slide-active .testimonial-name {
+  @apply text-xl mb-3;
+}
+#testimonial .swiper-slide-active .testimonial-date {
+  @apply text-sm;
+}
+#testimonial .swiper-slide-active .testimonial-comment {
+  @apply text-lg text-black/60;
+}
+#testimonial .swiper-slide-active .testimonial-card {
+  @apply p-6;
+}
