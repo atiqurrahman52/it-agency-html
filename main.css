@@ -77,6 +77,34 @@
 }
 /* Latest Posts end  */
 
+.client .swiper-wrapper {
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+}
+
+.testimonial .swiper-slide {
+  padding-top: 40px;
+}
+
+#testimonial .swiper-slide-active .testimonial-avatar {
+  @apply h-20 w-20 -mt-10 mb-4 border-primary;
+}
+#testimonial .swiper-slide-active .testimonial-name {
+  @apply text-xl mb-3;
+}
+#testimonial .swiper-slide-active .testimonial-date {
+  @apply text-sm;
+}
+#testimonial .swiper-slide-active .testimonial-comment {
+  @apply text-lg text-black/60;
+}
+#testimonial .swiper-slide-active .testimonial-card {
+  @apply p-6;
+}
+
+/* practice start  */
+
 .add-to-cart-btn1::before {
   content: "";
   height: 28px;
@@ -140,28 +168,77 @@
   bottom: -30%;
 }
 
-.client .swiper-wrapper {
-  transition-timing-function: linear;
-  -webkit-transition-timing-function: linear !important;
-  -o-transition-timing-function: linear !important;
+/* pppppppppppppppppppppp */
+.p2::after {
+  content: "";
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: -10px;
+  left: -10px;
+  position: absolute;
+  transition: all 1s linear;
+  z-index: -1;
+}
+.div2:hover .p2::after {
+  height: 200px;
+  width: 200px;
+  bottom: -20%;
+  left: -50%;
+  transition: all 1s linear;
+}
+.p2::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: red;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 1s linear;
+  z-index: -1;
+}
+.div2:hover .p2::before{
+  height: 200px;
+  width: 200px;
+  top:-40%;
+  right: -50%;
+  transition: all 1s linear;
+}
+.div2:hover .p2{
+  color: white;
+  font-size: 20px;
 }
 
-.testimonial .swiper-slide {
-  padding-top: 40px;
-}
 
-#testimonial .swiper-slide-active .testimonial-avatar {
-  @apply h-20 w-20 -mt-10 mb-4 border-primary;
+/* btn start  */
+.btn::after{
+  content: '';
+  width: 127px;
+  height: 10px;
+  left: -10px;
+  bottom: -10px;
+  border-radius: 5%;
+  position: absolute;
+  background-color: #FF5E37;
+  transition: all .8s linear;
+  z-index: -1;
+  /* right: 20px; */
+ /* transform: translate(-50%,-50%); */
+ 
 }
-#testimonial .swiper-slide-active .testimonial-name {
-  @apply text-xl mb-3;
+.btn-header:hover .btn::after{
+ width: 127px;
+ height: 45px;
+ transition: all 1s linear;
+ /* bottom: 1-0px; */
+
 }
-#testimonial .swiper-slide-active .testimonial-date {
-  @apply text-sm;
-}
-#testimonial .swiper-slide-active .testimonial-comment {
-  @apply text-lg text-black/60;
-}
-#testimonial .swiper-slide-active .testimonial-card {
-  @apply p-6;
+.btn-header:hover .btn{
+  color: white;
+  /* @apply border */
+/* btn end  */
+/* practice end  */
 }

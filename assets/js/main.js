@@ -57,7 +57,7 @@ var swiper_recent_work = new Swiper(".recent_work", {
   },
 });
 
-var swiper_recent_work = new Swiper(".testimonial", {
+var swiper_testimonial = new Swiper(".testimonial", {
   spaceBetween: 20,
   slidesPerView: 1,
   centeredSlides: true,
