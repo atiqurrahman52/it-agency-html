@@ -1,28 +1,25 @@
-// $(document).ready(function(){
-//     $(".menu-toggle").on("click",function(){
-//         console.log("open");
-//         $(".mobile-menu").removeClass("hidden");
-//           $(".mobile-menu").removeClass("-right-[241px]").addClass("right-0")
-//     })
+$(".menu-toggle").on("click", function () {
+  $("body").addClass("overflow-hidden");
+  $(".mobile-menu").removeClass("-left-[241px]").addClass("left-0");
 
-//     $(".close-menu").on("click", function() {
-//         console.log("close");
-//         $(".mobile-menu").addClass("hidden");
-//         $(".mobile-menu").addClass("-right-[241px]").removeClass("right-0")
-//     })
-// })
+  $(".mobile-overlay")
+    .removeClass("opacity-0, invisible")
+    .addClass("opacity-100 visible");
+});
 
-// $(document).ready(function() {
-//     // Toggle mobile menu
-//     $(".menu-toggle").click(function() {
-//       $(".mobile-menu").toggleClass("hidden");
-//     });
+$(".close-menu, .mobile-overlay").on("click", function () {
+  $("body").removeClass("overflow-hidden");
+  $(".mobile-menu").addClass("-left-[241px]").removeClass("left-0");
+  $(".mobile-overlay")
+    .addClass("opacity-0, invisible")
+    .removeClass("opacity-100 visible");
+});
 
-//     // Close mobile menu
-//     $(".close-menu").click(function() {
-//       $(".mobile-menu").addClass("hidden");
-//     });
-//   });
+
+
+
+
+
 
 // swiper slider start
 var swiper_recent_work = new Swiper(".recent_work", {
@@ -156,6 +153,31 @@ var swiper_client = new Swiper(".client", {
 // Jquery Start
 
 $(document).ready(function () {
+
+//  scroll to top start 
+  // $(".scrollTopButton").click(function () {
+  //   $("html").animate(
+  //     {
+  //       scrollTop: 0,
+  //     },
+  //     10000
+  //   );
+  // });
+  // $(window).scroll(function () {
+  //   var $scrolling = $(this).scrollTop();
+
+  //   if ($scrolling > 300) {
+  //     $(".scrollTopButton").addClass("show");
+  //   } else {
+  //     $(".scrollTopButton").removeClass("show");
+  //   }
+  // });
+
+//  scroll to top end
+
+
+
+
   $(".tabs a").click(function () {
     $(".panel").hide();
     $(".tabs a.active").removeClass("active");

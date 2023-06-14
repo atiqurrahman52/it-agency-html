@@ -44,7 +44,7 @@ module.exports = {
         black_color: "#1A170F",
         secondary_color: "#FF5E37",
         light_gray: "#C0C0C0",
-        csk:"#00161A "
+        csk:"#00161A"
       },
     },
   },
