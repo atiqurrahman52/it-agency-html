@@ -16,11 +16,6 @@ $(".close-menu, .mobile-overlay").on("click", function () {
 });
 
 
-
-
-
-
-
 // swiper slider start
 var swiper_recent_work = new Swiper(".recent_work", {
   spaceBetween: 20,
@@ -212,20 +207,20 @@ $(document).ready(function () {
   // latest post end
 });
 
-$(document).ready(function () {
-  $("nav li").click(function () {
-    $(this).toggleClass("active").siblings().removeClass("active");
-    $(this).siblings().find("ul").slideUp();
-    $(this)
-      .find("ul")
-      .slideToggle(function () {
-        $(this)
-          .find("li")
-          .each(function (index) {
-            $(this)
-              .delay(index * 100)
-              .animate({ opacity: "1" }, 200);
-          });
-      });
-  });
-});
+// $(document).ready(function () {
+//   $("nav li").click(function () {
+//     $(this).toggleClass("active").siblings().removeClass("active");
+//     $(this).siblings().find("ul").slideUp();
+//     $(this)
+//       .find("ul")
+//       .slideToggle(function () {
+//         $(this)
+//           .find("li")
+//           .each(function (index) {
+//             $(this)
+//               .delay(index * 100)
+//               .animate({ opacity: "1" }, 200);
+//           });
+//       });
+//   });
+// });
