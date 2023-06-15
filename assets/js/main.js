@@ -1,6 +1,43 @@
+window.addEventListener("DOMContentLoaded", function () {
+  var elements = document.querySelectorAll(".element");
+  var addClassBtn = document.getElementById("addClassBtn");
+  var removeActiveBtn = document.getElementById("removeActiveBtn");
+  var intervalId;
+
+  function addActiveClassWithInterval() {
+    var activeIndex = 0;
+    intervalId = setInterval(function () {
+      elements[activeIndex].classList.add("active");
+      activeIndex = (activeIndex + 1) % elements.length;
+    }, 1000);
+    setTimeout(() => {
+      addClassBtn.style.display = "none";
+      removeActiveBtn.style.display = "block";
+    }, 1000);
+  }
+
+  function stopInterval() {
+    clearInterval(intervalId);
+  }
+
+  function removeActiveClass() {
+    elements.forEach(function (element) {
+      element.classList.remove("active");
+    });
+    addClassBtn.style.display = "block";
+    removeActiveBtn.style.display = "none";
+  }
+
+  addClassBtn.addEventListener("click", addActiveClassWithInterval);
+  removeActiveBtn.addEventListener("click", function () {
+    stopInterval();
+    removeActiveClass();
+  });
+});
+
 $(".menu-toggle").on("click", function () {
   $("body").addClass("overflow-hidden");
-  $(".mobile-menu").removeClass("-left-[241px]").addClass("left-0");
+  $(".mobile-menu").addClass("show");
 
   $(".mobile-overlay")
     .removeClass("opacity-0, invisible")
@@ -9,12 +46,11 @@ $(".menu-toggle").on("click", function () {
 
 $(".close-menu, .mobile-overlay").on("click", function () {
   $("body").removeClass("overflow-hidden");
-  $(".mobile-menu").addClass("-left-[241px]").removeClass("left-0");
+  $(".mobile-menu").removeClass("show");
   $(".mobile-overlay")
     .addClass("opacity-0, invisible")
     .removeClass("opacity-100 visible");
 });
-
 
 // swiper slider start
 var swiper_recent_work = new Swiper(".recent_work", {
@@ -148,8 +184,7 @@ var swiper_client = new Swiper(".client", {
 // Jquery Start
 
 $(document).ready(function () {
-
-//  scroll to top start 
+  //  scroll to top start
   // $(".scrollTopButton").click(function () {
   //   $("html").animate(
   //     {
@@ -168,10 +203,7 @@ $(document).ready(function () {
   //   }
   // });
 
-//  scroll to top end
-
-
-
+  //  scroll to top end
 
   $(".tabs a").click(function () {
     $(".panel").hide();
