@@ -604,6 +604,10 @@ video {
   left: 0px;
 }
 
+.left-3{
+  left: 0.75rem;
+}
+
 .right-3{
   right: 0.75rem;
 }
@@ -622,6 +626,10 @@ video {
 
 .top-1\/2{
   top: 50%;
+}
+
+.top-4{
+  top: 1rem;
 }
 
 .top-9{
@@ -1209,6 +1217,11 @@ video {
   background-color: rgb(115 115 116 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#77BECD\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 190 205 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#C9C9C933\]\/20{
   background-color: rgb(201 201 201 / 0.2);
 }
@@ -1345,6 +1358,11 @@ video {
 .px-\[3px\]{
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-10{
@@ -2653,6 +2671,10 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
