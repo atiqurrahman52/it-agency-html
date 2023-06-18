@@ -499,7 +499,7 @@
   right: 0;
 }
 
-.hover-card .box {
+.hover-car .bo {
   position: absolute;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
@@ -511,8 +511,8 @@
   z-index: 2;
 }
 
-.hover-card::before,
-.hover-card::after {
+.hover-car::before,
+.hover-car::after {
   content: "";
   height: calc(100% + 200px);
   width: calc(100% + 200px);
