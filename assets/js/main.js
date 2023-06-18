@@ -35,6 +35,10 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
 $(".menu-toggle").on("click", function () {
   $("body").addClass("overflow-hidden");
   $(".mobile-menu").addClass("show");
