@@ -107,10 +107,13 @@
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   @apply h-3 w-8 rounded-lg;
 }
-.recent_work_pagination {
-  /* bottom: -1px !important; */
-}
+
 /* swiper slider end */
+/* scrollbar hidden start  */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+/* scrollbar hidden end  */
 
 /* recent work start  */
 .tabs a.active {
