@@ -490,7 +490,12 @@
 .navlink {
   @apply border border-[#5A5B5C] rounded-lg w-[69px] h-11  flex items-center justify-center;
 }
+
 /* Navbar slide end  */
+
+.about-bg{
+  background: rgba(0, 0, 0, 0.54);
+}
 
 .mobile-menu {
   right: -241px;
