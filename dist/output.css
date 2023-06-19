@@ -1212,11 +1212,6 @@ video {
   background-color: rgb(40 58 61 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#737374\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(115 115 116 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#77BECD\]{
   --tw-bg-opacity: 1;
   background-color: rgb(119 190 205 / var(--tw-bg-opacity));
@@ -2502,11 +2497,6 @@ video {
 .hover\:grayscale-0:hover{
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.focus\:outline-none:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 @media (min-width: 425px){
