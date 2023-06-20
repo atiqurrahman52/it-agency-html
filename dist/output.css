@@ -887,6 +887,10 @@ video {
   height: 100vh;
 }
 
+.h-\[\]{
+  height: ;
+}
+
 .w-1{
   width: 0.25rem;
 }
