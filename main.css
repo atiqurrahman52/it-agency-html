@@ -461,12 +461,11 @@
 
 /* Navbar slide start  */
 .main {
-  /* margin-top: 200px; */
+
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  /* background: #000; */
 }
 
 .element-wrapper {
@@ -475,7 +474,6 @@
   justify-content: flex-end;
   gap: 20px;
   color: #fff;
-  /* padding: 20px 0; */
   max-width: 100%;
   position: relative;
 }
@@ -492,6 +490,7 @@
   position: static;
   transform: translate(0);
 }
+/* Navbar slide end  */
 
 .navlink {
   @apply border border-[#5A5B5C] rounded-lg w-[69px] h-11  flex items-center justify-center;
@@ -507,10 +506,11 @@
   right: -241px;
 }
 .mobile-menu.show {
-  right: 0;
+  right: 0px;
 }
 
-.hover-car .bo {
+/* service animation start  */
+.hover-card .box {
   position: absolute;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
@@ -522,8 +522,8 @@
   z-index: 2;
 }
 
-.hover-car::before,
-.hover-car::after {
+.hover-card::before,
+.hover-card::after {
   content: "";
   height: calc(100% + 200px);
   width: calc(100% + 200px);
@@ -552,3 +552,5 @@
   top: 20%;
   left: 20%;
 }
+
+/* service animation end  */
