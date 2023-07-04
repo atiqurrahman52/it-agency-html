@@ -190,7 +190,8 @@
                 <h3 class="font-NotoSerif font-extrabold text-2xl md:text-[32px] mb-6">Featured Blog</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                    <div class="bg-[#F9F9F9] p-3 md:p-6 rounded-md">
+                   <div class="hover-card relative rounded-lg overflow-hidden p-[1px]">
+                    <div class="bg-[#F9F9F9] p-3 md:p-6 rounded-md box">
                         <img class="rounded-lg w-full" src="../assets/images/blog/blog-1.webp" alt="">
                         <div class="flex items-center gap-3 mt-3 mb-5">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -221,8 +222,11 @@
                             adipiscing elit. Suspendisse varius enim in eros.sum
                             dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                     </div>
+                   </div>
 
-                    <div class="bg-[#F9F9F9] p-3 md:p-6 rounded-md">
+                   <!-- <div class="hover-card relative rounded-lg overflow-hidden p-[1px]"> -->
+                    <!-- <div class="box bg-[#F9FCFF]"></div> -->
+                    <div class="bg-[#F9F9F9] p-3 md:p-6 rounded-md bo">
                         <img class="rounded-lg w-full" src="../assets/images/blog/blog-2.webp" alt="">
                         <div class="flex items-center gap-3 mt-3 mb-5">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -253,12 +257,12 @@
                             adipiscing elit. Suspendisse varius enim in eros.sum
                             dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in er...</p>
                     </div>
+                   <!-- </div> -->
 
                 </div>
             </div>
 
         </div>
-
     </section>
     <!-- featured blog end  -->
 
@@ -272,13 +276,15 @@
 
                     <div class="tab-filter flex gap-4">
                         <button
-                            class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4 active"
+                            class="filter-button relative after:absolute after:z-[-1]  hover:text-white tab-hover font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4 active"
                             data-filter="all">All</button>
-                        <button class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
+                        <button class="filter-button relative after:absolute after:z-[-1] hover:text-white tab-hover font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
                             data-filter="popular">Popular</button>
-                        <button class="filter-button font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
+                        <button class="filter-button relative after:absolute after:z-[-1] hover:text-white tab-hover font-Inter font-semibold text-base text-[#0D0D0E] shadow-[0_20px_24px_-4px_rgba(35,160,156,0.04),0px_8px_8px_-4px_rgba(35,160,156,0.03)] rounded-lg border  py-2 px-4"
                             data-filter="recent">Recent </button>
                     </div>
+
+                  
                 </div>
 
                 <div class="items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
