@@ -260,48 +260,52 @@
 }
 
 /* service animation start  */
-.hover-card .box {
-  position: absolute;
-  height: calc(100% - 2px);
-  width: calc(100% - 2px);
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  border-radius: 8px;
-  z-index: 2;
+@media screen and (min-width: 1024px) {
+  .hover-card .box {
+    position: absolute;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 8px;
+    z-index: 2;
+  }
+  
+  .hover-card::before,
+  .hover-card::after {
+    content: "";
+    height: calc(100% + 200px);
+    width: calc(100% + 200px);
+    @apply bg-primary;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .hover-card::before {
+    right: calc(100% - 60px);
+    bottom: calc(100% - 60px);
+  }
+  
+  .hover-card::after {
+    left: calc(100% - 60px);
+    top: calc(100% - 60px);
+  }
+  
+  .hover-card:hover:before {
+    right: 20%;
+    bottom: 20%;
+  }
+  .hover-card:hover:after {
+    top: 20%;
+    left: 20%;
+  }
 }
 
-.hover-card::before,
-.hover-card::after {
-  content: "";
-  height: calc(100% + 200px);
-  width: calc(100% + 200px);
-  @apply bg-primary;
-  position: absolute;
-  transform: rotate(45deg);
-  z-index: 1;
-  transition: 0.5s;
-}
 
-.hover-card::before {
-  right: calc(100% - 60px);
-  bottom: calc(100% - 60px);
-}
-
-.hover-card::after {
-  left: calc(100% - 60px);
-  top: calc(100% - 60px);
-}
-
-.hover-card:hover:before {
-  right: 20%;
-  bottom: 20%;
-}
-.hover-card:hover:after {
-  top: 20%;
-  left: 20%;
-}
 /* service animation end  */
 
 
