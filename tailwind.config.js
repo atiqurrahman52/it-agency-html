@@ -35,7 +35,7 @@ module.exports = {
         NotoSerif: ["Noto Serif Thai", "serif"],
         Poppins: ["Poppins", "sans-serif"],
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],
-        openSans: ["Open_Sans_Condensed"],
+        openSans: ["Open_Sans_Condensed","sans-serif"],
       },
 
       colors: {
