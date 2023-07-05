@@ -935,10 +935,6 @@ video {
   width: 127px;
 }
 
-.w-\[136px\]{
-  width: 136px;
-}
-
 .w-\[157px\]{
   width: 157px;
 }
@@ -983,12 +979,8 @@ video {
   width: 100%;
 }
 
-.w-\[30\%\]{
-  width: 30%;
-}
-
-.w-\[50\%\]{
-  width: 50%;
+.max-w-\[350px\]{
+  max-width: 350px;
 }
 
 .max-w-\[620px\]{
@@ -1005,26 +997,6 @@ video {
 
 .max-w-\[768px\]{
   max-width: 768px;
-}
-
-.max-w-0{
-  max-width: 0rem;
-}
-
-.max-w-\[\]{
-  max-width: ;
-}
-
-.max-w-\[300px\]{
-  max-width: 300px;
-}
-
-.max-w-\[400px\]{
-  max-width: 400px;
-}
-
-.max-w-\[350px\]{
-  max-width: 350px;
 }
 
 .-translate-y-1\/2{
@@ -1044,14 +1016,6 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -1066,10 +1030,6 @@ video {
 
 .items-center{
   align-items: center;
-}
-
-.justify-end{
-  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1140,6 +1100,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-9 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -2594,10 +2566,6 @@ video {
     width: 100px;
   }
 
-  .md\:w-\[165px\]{
-    width: 165px;
-  }
-
   .md\:w-\[167px\]{
     width: 167px;
   }
@@ -2614,28 +2582,12 @@ video {
     width: auto;
   }
 
-  .md\:w-\[50\%\]{
-    width: 50%;
-  }
-
-  .md\:w-\[49\%\]{
-    width: 49%;
-  }
-
-  .md\:w-\[49\.99\%\]{
-    width: 49.99%;
-  }
-
-  .md\:w-\[\%\]{
-    width: %;
+  .md\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-12{
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:flex-row{
