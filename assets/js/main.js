@@ -186,6 +186,22 @@ var swiper_client = new Swiper(".client", {
 // Jquery Start
 
 $(document).ready(function () {
+
+  
+  // count up
+  $(".count").each(function () {
+    var $this = $(this);
+    jQuery({ Counter: 0 }).animate(
+      { Counter: $this.attr("data-stop") },
+      {
+        duration: 2000,
+        easing: "swing",
+        step: function (now) {
+          $this.text(Math.ceil(now));
+        },
+      }
+    );
+  });
   //  scroll to top start
   // $(".scrollTopButton").click(function () {
   //   $("html").animate(
@@ -268,3 +284,4 @@ $('.counter').counterUp({
 $('.counter').addClass('animated fadeInDownBig');
 $('h3').addClass('animated fadeIn');
 // Counter end 
+
