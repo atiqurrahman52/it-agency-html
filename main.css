@@ -329,6 +329,66 @@
 /* service animation end  */
 
 
+/* Tab animation start  */
+.animate-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 10;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.animate-btn::before {
+  content: '';
+  height: calc(100% + 300px);
+  width: calc(100% + 100px);
+  position: absolute;
+  top: -50%;
+  right: calc(100% - 65px);
+  z-index: -1;
+  transform: rotate(-40deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.animate-btn-fill {
+  background-color: #FF5E37;
+  color: white;
+}
+
+.animate-btn-fill:hover,
+.animate-btn-outline:hover {
+  color: white;
+}
+
+.animate-btn-fill::before {
+  background-color: white;
+}
+
+.animate-btn-outline {
+  /* border: 1px solid blue; */
+  /* color: var(--blue); */
+}
+
+.animate-btn-outline::before {
+  background-color: #FF5E37;
+}
+
+.animate-btn:hover::before {
+  top: calc(-50% - 100px);
+  right: calc(0% - 50px);
+  opacity: 0.1;
+}
+
+.animate-btn-outline:hover::before {
+  opacity: 1;
+}
+/* Tab animation end  */
+
+
 
 /* Counter start  */
 .counter {
